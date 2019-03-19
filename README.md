@@ -1,0 +1,1 @@
+# Thinkpad-X250-Hackintosh-macOS-10.14.x---Clover-config.plist-kexts
