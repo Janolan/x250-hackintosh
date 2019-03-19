@@ -159,6 +159,7 @@ To finish the setup, you need to make your local drive bootable (right now you a
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer). Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount it.
 - **Install Kexts**: Create a folder named `Kext` on your desktop and copy kernel extensions found in `/EFI/CLOVER/kexts/Other` into it. Open Terminal and type `cd desktop/Kext`. Then type `sudo cp -R *.kext /Library/Extensions` to move the files and rebuild the cache with `sudo kextcache -i /`.
+- **Delete Kexts from Clover**: Now go back to `/EFI/CLOVER/kexts/Other` and delete everything, except `FakeSMC.kext`, `IntelMausiEthernet.kext` and `VoodooPS2Controller.kext`.
 
 Once finished reboot your system.
 
