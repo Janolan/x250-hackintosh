@@ -9,6 +9,7 @@ What doesn't work (yet):
 - Wifi/Bluetooth (use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a Dell DW1560/Broadcom BCM94352Z)
 - Card Reader
 - VGA (use miniDP instead)
+- Dual Battery indicator (it goes down to 7% when one of the batteries is empty and then just stays there and doesn't show the status of the second battery)
 
 ## Overview
 
