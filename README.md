@@ -9,6 +9,7 @@ What doesn't work (yet):
 - Wifi/Bluetooth (use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a Dell DW1560/Broadcom BCM94352Z)
 - Card Reader
 - VGA (use miniDP instead)
+- Dual Battery indicator (it goes down to 7% when one of the batteries is empty and then just stays there and doesn't show the status of the second battery)
 
 ## Overview
 
@@ -149,7 +150,9 @@ Copy the `EFI` folder provided in my repo onto your USB flash drive `CLOVER` par
 
 ## Installing macOS
 
-Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
+Install macOS by booting from the USB installer. Format your local drive with the Disk Utility application as `Apple Extended Journal` and `GUID-partition table`. 
+
+It takes about 30 min from start to finish. The computer will restart multiple times. When rebooting, make sure to select `Install macOS ...` each time in the Clover boot menu. Once installed, choose to boot from local drive in the Clover boot menu.
 
 ### Making local drive bootable
 
