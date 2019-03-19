@@ -1,0 +1,151 @@
+23:155  0:034  Found BIOS RSDP at F0120
+23:155  0:000  Printing ACPI tables from RSDP F0120 ...
+23:155  0:000   F0120: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+23:155  0:000    (Xsdt: ACDFE1C0, Rsdt: ACDFE0FC)
+23:155  0:000    ACDFE1C0: 'XSDT', 'TP-N10', Rev: 1, Len: 220
+23:155  0:000    ACDFE0FC: 'RSDT', 'TP-N10', Rev: 1, Len: 128
+23:155  0:000    Tables in Xsdt: 23
+23:155  0:000    0. ACDF8000: 'FACP', 'TP-N10', Rev: 5, Len: 268
+23:155  0:000        (Dsdt: ACDE3000, Facs: ACD68000, XDsdt: ACDE3000, XFacs: 0)
+23:155  0:000        ACDE3000: 'DSDT', 'TP-N10', Rev: 2, Len: 69240
+23:157  0:001        ACD68000: 'FACS', Ver: 2, Len: 64
+23:157  0:000    1. ACDFD000: 'SLIC', 'TP-N10', Rev: 1, Len: 374
+23:157  0:000    2. ACDFC000: 'ASF!', 'TP-N10', Rev: 32, Len: 165
+23:157  0:000    3. ACDFB000: 'HPET', 'TP-N10', Rev: 1, Len: 56
+23:157  0:000    4. ACDFA000: 'ECDT', 'TP-N10', Rev: 1, Len: 82
+23:157  0:000    5. ACDF7000: 'APIC', 'TP-N10', Rev: 1, Len: 152
+23:157  0:000    6. ACDF6000: 'MCFG', 'TP-N10', Rev: 1, Len: 60
+23:157  0:000    7. ACDF5000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+23:157  0:000    8. ACDF4000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+23:157  0:000    9. ACDE2000: 'SSDT', 'SataAhci', Rev: 1, Len: 2507
+23:157  0:000    10. ACDE1000: 'SSDT', 'Rmv_Batt', Rev: 1, Len: 338
+23:157  0:000    11. ACDE0000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1681
+23:157  0:000    12. ACDDF000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+23:157  0:000    13. ACDDE000: 'SSDT', 'CtdpB', Rev: 2, Len: 873
+23:157  0:000    14. ACDDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 5237
+23:157  0:000    15. ACDDB000: 'SSDT', 'CppcTabl', Rev: 2, Len: 916
+23:157  0:000    16. ACDDA000: 'PCCT', 'TP-N10', Rev: 5, Len: 110
+23:157  0:000    17. ACDD9000: 'SSDT', 'Cpc_Tabl', Rev: 2, Len: 2756
+23:157  0:000    18. ACDD8000: 'UEFI', 'TP-N10', Rev: 1, Len: 66
+23:157  0:000    19. ACD42000: 'MSDM', 'TP-N10', Rev: 3, Len: 85
+23:157  0:000    20. ACDD7000: 'BATB', 'TP-N10', Rev: 2, Len: 74
+23:157  0:000    21. ACDD6000: 'FPDT', 'TP-N10', Rev: 1, Len: 100
+23:157  0:000    22. ACDD5000: 'UEFI', 'TP-N10', Rev: 1, Len: 818
+23:157  0:000    Tables in Rsdt: 23
+23:157  0:000    0. ACDF8000: 'FACP', 'TP-N10', Rev: 5, Len: 268
+23:157  0:000        (Dsdt: ACDE3000, Facs: ACD68000, XDsdt: ACDE3000, XFacs: 0)
+23:157  0:000        ACDE3000: 'DSDT', 'TP-N10', Rev: 2, Len: 69240
+23:159  0:001        ACD68000: 'FACS', Ver: 2, Len: 64
+23:159  0:000    1. ACDFD000: 'SLIC', 'TP-N10', Rev: 1, Len: 374
+23:159  0:000    2. ACDFC000: 'ASF!', 'TP-N10', Rev: 32, Len: 165
+23:159  0:000    3. ACDFB000: 'HPET', 'TP-N10', Rev: 1, Len: 56
+23:159  0:000    4. ACDFA000: 'ECDT', 'TP-N10', Rev: 1, Len: 82
+23:159  0:000    5. ACDF7000: 'APIC', 'TP-N10', Rev: 1, Len: 152
+23:159  0:000    6. ACDF6000: 'MCFG', 'TP-N10', Rev: 1, Len: 60
+23:159  0:000    7. ACDF5000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+23:159  0:000    8. ACDF4000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+23:159  0:000    9. ACDE2000: 'SSDT', 'SataAhci', Rev: 1, Len: 2507
+23:159  0:000    10. ACDE1000: 'SSDT', 'Rmv_Batt', Rev: 1, Len: 338
+23:159  0:000    11. ACDE0000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1681
+23:159  0:000    12. ACDDF000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+23:159  0:000    13. ACDDE000: 'SSDT', 'CtdpB', Rev: 2, Len: 873
+23:159  0:000    14. ACDDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 5237
+23:159  0:000    15. ACDDB000: 'SSDT', 'CppcTabl', Rev: 2, Len: 916
+23:159  0:000    16. ACDDA000: 'PCCT', 'TP-N10', Rev: 5, Len: 110
+23:159  0:000    17. ACDD9000: 'SSDT', 'Cpc_Tabl', Rev: 2, Len: 2756
+23:159  0:000    18. ACDD8000: 'UEFI', 'TP-N10', Rev: 1, Len: 66
+23:159  0:000    19. ACD42000: 'MSDM', 'TP-N10', Rev: 3, Len: 85
+23:159  0:000    20. ACDD7000: 'BATB', 'TP-N10', Rev: 2, Len: 74
+23:159  0:000    21. ACDD6000: 'FPDT', 'TP-N10', Rev: 1, Len: 100
+23:159  0:000    22. ACDD5000: 'UEFI', 'TP-N10', Rev: 1, Len: 818
+23:159  0:000  Found UEFI Acpi 2.0 RSDP at ACDFE014
+23:159  0:000  Saving ACPI tables from RSDP ACDFE014 to EFI\CLOVER\ACPI\origin ...
+23:159  0:000   ACDFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+23:190  0:030    (Xsdt: ACDFE1C0, Rsdt: ACDFE0FC)
+23:190  0:000    ACDFE1C0: 'XSDT', 'TP-N10', Rev: 1, Len: 220 -> XSDT.aml
+23:227  0:037    ACDFE0FC: 'RSDT', 'TP-N10', Rev: 1, Len: 128 -> RSDT.aml
+23:259  0:032    Tables in Xsdt: 23
+23:259  0:000    0. ACDF8000: 'FACP', 'TP-N10', Rev: 5, Len: 268
+23:259  0:000        (Dsdt: ACDE3000, Facs: ACD68000, XDsdt: ACDE3000, XFacs: 0)
+23:259  0:000        ACDE3000: 'DSDT', 'TP-N10', Rev: 2, Len: 69240
+23:261  0:001        ACD68000: 'FACS', Ver: 2, Len: 64
+23:261  0:000    1. ACDFD000: 'SLIC', 'TP-N10', Rev: 1, Len: 374
+23:261  0:000    2. ACDFC000: 'ASF!', 'TP-N10', Rev: 32, Len: 165
+23:261  0:000    3. ACDFB000: 'HPET', 'TP-N10', Rev: 1, Len: 56
+23:261  0:000    4. ACDFA000: 'ECDT', 'TP-N10', Rev: 1, Len: 82
+23:261  0:000    5. ACDF7000: 'APIC', 'TP-N10', Rev: 1, Len: 152
+23:261  0:000    6. ACDF6000: 'MCFG', 'TP-N10', Rev: 1, Len: 60
+23:261  0:000    7. ACDF5000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+23:261  0:000    8. ACDF4000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+23:261  0:000    9. ACDE2000: 'SSDT', 'SataAhci', Rev: 1, Len: 2507
+23:261  0:000    10. ACDE1000: 'SSDT', 'Rmv_Batt', Rev: 1, Len: 338
+23:261  0:000    11. ACDE0000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1681
+23:261  0:000    12. ACDDF000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+23:261  0:000    13. ACDDE000: 'SSDT', 'CtdpB', Rev: 2, Len: 873
+23:261  0:000    14. ACDDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 5237
+23:261  0:000    15. ACDDB000: 'SSDT', 'CppcTabl', Rev: 2, Len: 916
+23:261  0:000    16. ACDDA000: 'PCCT', 'TP-N10', Rev: 5, Len: 110
+23:261  0:000    17. ACDD9000: 'SSDT', 'Cpc_Tabl', Rev: 2, Len: 2756
+23:261  0:000    18. ACDD8000: 'UEFI', 'TP-N10', Rev: 1, Len: 66
+23:261  0:000    19. ACD42000: 'MSDM', 'TP-N10', Rev: 3, Len: 85
+23:261  0:000    20. ACDD7000: 'BATB', 'TP-N10', Rev: 2, Len: 74
+23:261  0:000    21. ACDD6000: 'FPDT', 'TP-N10', Rev: 1, Len: 100
+23:261  0:000    22. ACDD5000: 'UEFI', 'TP-N10', Rev: 1, Len: 818
+23:261  0:000    Tables in Rsdt: 23
+23:261  0:000    0. ACDF8000: 'FACP', 'TP-N10', Rev: 5, Len: 268
+23:261  0:000        (Dsdt: ACDE3000, Facs: ACD68000, XDsdt: ACDE3000, XFacs: 0)
+23:261  0:000        ACDE3000: 'DSDT', 'TP-N10', Rev: 2, Len: 69240
+23:263  0:001        ACD68000: 'FACS', Ver: 2, Len: 64
+23:263  0:000    1. ACDFD000: 'SLIC', 'TP-N10', Rev: 1, Len: 374
+23:263  0:000    2. ACDFC000: 'ASF!', 'TP-N10', Rev: 32, Len: 165
+23:263  0:000    3. ACDFB000: 'HPET', 'TP-N10', Rev: 1, Len: 56
+23:263  0:000    4. ACDFA000: 'ECDT', 'TP-N10', Rev: 1, Len: 82
+23:263  0:000    5. ACDF7000: 'APIC', 'TP-N10', Rev: 1, Len: 152
+23:263  0:000    6. ACDF6000: 'MCFG', 'TP-N10', Rev: 1, Len: 60
+23:263  0:000    7. ACDF5000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+23:263  0:000    8. ACDF4000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+23:263  0:000    9. ACDE2000: 'SSDT', 'SataAhci', Rev: 1, Len: 2507
+23:263  0:000    10. ACDE1000: 'SSDT', 'Rmv_Batt', Rev: 1, Len: 338
+23:263  0:000    11. ACDE0000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1681
+23:263  0:000    12. ACDDF000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+23:263  0:000    13. ACDDE000: 'SSDT', 'CtdpB', Rev: 2, Len: 873
+23:263  0:000    14. ACDDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 5237
+23:263  0:000    15. ACDDB000: 'SSDT', 'CppcTabl', Rev: 2, Len: 916
+23:263  0:000    16. ACDDA000: 'PCCT', 'TP-N10', Rev: 5, Len: 110
+23:263  0:000    17. ACDD9000: 'SSDT', 'Cpc_Tabl', Rev: 2, Len: 2756
+23:263  0:000    18. ACDD8000: 'UEFI', 'TP-N10', Rev: 1, Len: 66
+23:263  0:000    19. ACD42000: 'MSDM', 'TP-N10', Rev: 3, Len: 85
+23:263  0:000    20. ACDD7000: 'BATB', 'TP-N10', Rev: 2, Len: 74
+23:263  0:000    21. ACDD6000: 'FPDT', 'TP-N10', Rev: 1, Len: 100
+23:263  0:000    22. ACDD5000: 'UEFI', 'TP-N10', Rev: 1, Len: 818
+23:263  0:000  Found UEFI Acpi 1.0 RSDP at ACDFE000
+23:263  0:000  Printing ACPI tables from RSDP ACDFE000 ...
+23:263  0:000   ACDFE000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+23:263  0:000    (Rsdt: ACDFE038)
+23:263  0:000    ACDFE038: 'RSDT', 'TP-N10', Rev: 1, Len: 124
+23:263  0:000    Tables in Rsdt: 22
+23:263  0:000    0. ACDF9000: 'FACP', 'TP-N10', Rev: 1, Len: 116
+23:263  0:000        (Dsdt: ACDE3000, Facs: ACD68000)
+23:263  0:000        ACDE3000: 'DSDT', 'TP-N10', Rev: 2, Len: 69240
+23:265  0:001        ACD68000: 'FACS', Ver: 2, Len: 64
+23:265  0:000    1. ACDFC000: 'ASF!', 'TP-N10', Rev: 32, Len: 165
+23:265  0:000    2. ACDFB000: 'HPET', 'TP-N10', Rev: 1, Len: 56
+23:265  0:000    3. ACDFA000: 'ECDT', 'TP-N10', Rev: 1, Len: 82
+23:265  0:000    4. ACDF7000: 'APIC', 'TP-N10', Rev: 1, Len: 152
+23:265  0:000    5. ACDF6000: 'MCFG', 'TP-N10', Rev: 1, Len: 60
+23:265  0:000    6. ACDF5000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+23:265  0:000    7. ACDF4000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+23:265  0:000    8. ACDE2000: 'SSDT', 'SataAhci', Rev: 1, Len: 2507
+23:265  0:000    9. ACDE1000: 'SSDT', 'Rmv_Batt', Rev: 1, Len: 338
+23:265  0:000    10. ACDE0000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1681
+23:265  0:000    11. ACDDF000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+23:265  0:000    12. ACDDE000: 'SSDT', 'CtdpB', Rev: 2, Len: 873
+23:265  0:000    13. ACDDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 5237
+23:265  0:000    14. ACDDB000: 'SSDT', 'CppcTabl', Rev: 2, Len: 916
+23:265  0:000    15. ACDDA000: 'PCCT', 'TP-N10', Rev: 5, Len: 110
+23:265  0:000    16. ACDD9000: 'SSDT', 'Cpc_Tabl', Rev: 2, Len: 2756
+23:265  0:000    17. ACDD8000: 'UEFI', 'TP-N10', Rev: 1, Len: 66
+23:265  0:000    18. ACD42000: 'MSDM', 'TP-N10', Rev: 3, Len: 85
+23:265  0:000    19. ACDD7000: 'BATB', 'TP-N10', Rev: 2, Len: 74
+23:265  0:000    20. ACDD6000: 'FPDT', 'TP-N10', Rev: 1, Len: 100
+23:265  0:000    21. ACDD5000: 'UEFI', 'TP-N10', Rev: 1, Len: 818
