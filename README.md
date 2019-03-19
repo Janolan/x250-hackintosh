@@ -1,5 +1,7 @@
 # X250 Hackintosh (macOS 10.14.x)
 
+![X250 Hackintosh](https://raw.githubusercontent.com/Janolan/x250-hackintosh/master/X250%20Hackintosh.jpg)
+
 This is a guide on how to install macOS mojave on the Thinkpad X250.
 
 What doesn't work (yet):
