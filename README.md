@@ -21,6 +21,7 @@ It's a `99.99%` working hackintosh. What doesn't work (yet):
 ### Physical Requirements
 
 * A minimum of 4GB USB drive
+* A working Ethernet connection
 
 ### Non-physical Requirements
 
@@ -30,7 +31,7 @@ It's a `99.99%` working hackintosh. What doesn't work (yet):
   * For macOS users, you already have 2.7+ version installed, no need for extra tools
 * gibMacOS: a sweet tool from /u/corpnewt [https://github.com/corpnewt/gibMacOS](https://github.com/corpnewt/gibMacOS)
   * press `Clone or Download` button and download as Zip, extract it somewhere
-* Other software requirements will be downloaded thorough the guide \(OS specific\)
+* Other software requirements will be downloaded throughout the guide \(OS specific\)
 
 ### Bios Settings
 
@@ -56,7 +57,7 @@ In `Startup` menu, set the following options:
 
 ### Downloading the Recovery HD image...
 
-After downloading `gibMacOS` \(that will be refereed as gOS later on\), you'll have to open the the folder where it is \(or `cd` to it if you clone it with git\). If you're using macOS or Linux, you should know how to `cd` to it through your preferred Terminal emulator. If you're a **Windows** user, follow these instructions to get to the command line inside the folder.
+Open the unzipped `gibmacOS` folder. If you're using macOS or Linux, you should know how to `cd` to it through your preferred Terminal emulator. If you're a **Windows** user, follow these instructions to get to the command line inside the folder.
 
 * Open Command Prompt/PowerShell and `cd` to where it is.
 * OR open the folder where it is, press `Files` &gt; `Open Windows PowerShell`
@@ -65,7 +66,7 @@ Now that you're inside the command prompt/powershell/terminal, we'll use gibMacO
 
 1. run `python gibMacOS.command -r -v mojave`
 2. The software will download the recovery image, meanwhile:
-   1. Plug your USB device \(USB 2.0 drive are recommended\)
+   1. Plug your USB device
    2. Backup any data \*from\* it
    3. Format it \(it will be formatted anyways later on\)
 
