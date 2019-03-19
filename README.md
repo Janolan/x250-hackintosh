@@ -158,6 +158,15 @@ Install macOS by booting on the USB key. It takes about 30min. The computer will
 To finish the setup, you need to make your local drive bootable (right now you are still using the Clover boot from your USB installer to boot your system:
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer). Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount it.
-- **Install Kexts**: install kernel extensions found in `/EFI/CLOVER/kexts/Other` into `/Library/Extensions` on your local drive. Use this guide to [properly install the kexts.](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave.268964/)]
+- **Install Kexts**: install kernel extensions found in `/EFI/CLOVER/kexts/Other` into `/Library/Extensions` on your local drive. 
 
-Reboot and enjoy macOS on your Thinkpad X250.
+1. Using Finder create a folder on your desktop and copy all the kexts you want to install into it.
+2. Open Terminal and change the active path to the folder you created in step 1 using the "CD" command.
+3. Install the Kexts into /Library/Extensions using `sudo cp -R *.kext /Library/Extensions` 
+3. Then rebuild the caches with `sudo kextcache -i /` 
+
+Note: Do not use Finder to copy kext's to /Library/Extensions as it will result in the kexts having bad permissions.
+
+Once finished reboot your system.
+
+## Enjoy macOS on your Thinkpad X250.
