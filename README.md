@@ -9,95 +9,65 @@ Thinkpad X250 Hackintosh configuration. This repository contains the following f
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `Kexts`: kexts to install in `/Library/Extensions` on your local drive once macOS has been installed.
 
-It's a `99.99%` working hackintosh, including:
+It's a `99.99%` working hackintosh. What doesn't work (yet):
 
-- *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
-- **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
-- **Battery status**: handled by [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver) kext,
-- Brightness control: Thanks to [AppleBacklightFixup](https://bitbucket.org/RehabMan/applebacklightfixup) kext,
-- Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
-- USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
-- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
-- Audio Jack connector,
-- And Display Port external display.
+- Trackpad
+- Trackpad Buttons
+- Wifi (use a USB Wifi Dongle or replace the Wifi Card with a DW1560)
+- Card Reader
 
-### Prerequisites
+## Setup
 
-What things you need to install the software and how to install them
+### Bios Settings
+
+The bios must be properly configured prior to installing MacOS.
+
+In `Security` menu, set the following settings:
+
+- `Security > Security` Chip: must be **Disabled**,
+- `Memory Protection > Execution Prevention`: must be **Enabled**,
+- `Virtualization > Intel Virtualization Technology`: must be **Disabled**,
+- `Internal Device Access > Bottom Cover Tamper Detection`: must be **Disabled**,
+- `Anti-Theft > Current Setting`: must be **Disabled**,
+- `Anti-Theft > Computrace > Current Setting`: must be **Disabled**,
+- `Secure Boot > Secure Boot`: must be **Disabled**.
+
+In `Startup` menu, set the following options:
+
+- `UEFI/Legacy Boot`: **Both**,
+- `UEFI/Legacy Priority`: **UEFI First**,
+- `CSM Support`: **Yes**.
+
+Now you can go through the install. 
+
+### Bootable USB Drive
+
+The guide [how to create a Mojave USB Installer Drive](https://internet-install.gitbook.io/macos-internet-install/) explains how to create a USB flash drive to install MacOs on your X250. Follow it up to the point where you are supposed to download
+"the latest Clover LZMA from Dids' repo" at the beginning of the section "Clover and friends [part 1]...".
+
+### Copy EFI Folder to USB
+
+Copy the content of the `EFI` folder provided in my repo onto your USB flash drive `EFI` partition. The EFI partition is usually hidden. Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount the EFI partition of your flash drive on your mac (it appears as a disk on the desktop once done). On Windows or Linux it shouldn't be hidden.
+
+### Install macOS
+
+Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
+
+### What's next?
+
+To finish the setup, you need to make your local drive bootable (right now you are still using the Clover boot from your USB installer to boot your system:
+
+- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer).
+- **Install Kexts**: install kernel extensions provided by `Kexts` from this repository into `/Library/Extensions`. Use this guide to [properly install the kexts.](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave.268964/)]
+
+You're almost done! Reboot and enjoy macOS on your Thinpad X250.
+
+## Miscellaneous
+
+### SSD Enable Trim
+
+If you Sata ssd hasn't trim enabled, run the following command from the *Terminal* to enable it:
 
 ```
-Give examples
+sudo trimforce enable
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
