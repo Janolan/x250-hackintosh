@@ -1,12 +1,12 @@
 # X250 Hackintosh (macOS 10.14.x)
 
-This is a guide to set up the Lenovo Thinkpad X250 as a 99% working hackintosh.
+This is a guide on how to install macOS mojave on the Thinkpad X250.
 
 It's a `99.99%` working hackintosh. What doesn't work (yet):
 
-- Trackpad
+- Trackpoint
 - Trackpad Buttons
-- Wifi (use a USB Wifi Dongle or replace the Wifi Card with a DW1560)
+- Wifi/Bluetooth (use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a Dell DW1560/Broadcom BCM94352Z)
 - Card Reader
 
 ## Physical and non-physical Requirements
