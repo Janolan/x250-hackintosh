@@ -2,13 +2,6 @@
 
 This is a guide to set up the Lenovo Thinkpad X250 as a 99% working hackintosh.
 
-## Introduction
-
-Thinkpad X250 Hackintosh configuration. This repository contains the following folders:
-
-- `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
-- `Kexts`: kexts to install in `/Library/Extensions` on your local drive once macOS has been installed.
-
 It's a `99.99%` working hackintosh. What doesn't work (yet):
 
 - Trackpad
@@ -20,22 +13,22 @@ It's a `99.99%` working hackintosh. What doesn't work (yet):
 
 ### Physical Requirements
 
-* A minimum of 4GB USB drive
+* A USB drive (minimum is 4GB)
 * A working Ethernet connection
 
 ### Non-physical Requirements
 
 * Python 2.7 or greater:
   * For Windows, get it from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and make sure you enable "add to PATH" in the install
-  * For linux users, install it if you dont have it following your distro's tools
+  * For Linux users, install it if you dont have it following your distro's tools
   * For macOS users, you already have 2.7+ version installed, no need for extra tools
 * gibMacOS: a sweet tool from /u/corpnewt [https://github.com/corpnewt/gibMacOS](https://github.com/corpnewt/gibMacOS)
   * press `Clone or Download` button and download as Zip, extract it somewhere
 * Other software requirements will be downloaded throughout the guide \(OS specific\)
 
-### Bios Settings
+### BIOS Settings
 
-The bios must be properly configured prior to installing MacOS.
+The BIOS must be properly configured prior to installing MacOS.
 
 In `Security` menu, set the following settings:
 
@@ -55,7 +48,7 @@ In `Startup` menu, set the following options:
 
 ## Create USB installer
 
-### Downloading the Recovery HD image...
+### Downloading Mojave
 
 Open the unzipped `gibmacOS` folder. If you're using macOS or Linux, you should know how to `cd` to it through your preferred Terminal emulator. If you're a **Windows** user, follow these instructions to get to the command line inside the folder.
 
@@ -70,7 +63,7 @@ Now that you're inside the command prompt/powershell/terminal, we'll use gibMacO
    2. Backup any data \*from\* it
    3. Format it \(it will be formatted anyways later on\)
 
-### Preparing your installer media...
+### Preparing your USB installer
 
 After the download, you'll find a new folder named `macOS downloads` where the program we used downloaded macOS recovery image for your macOS version. For this part of the setup. I'll be separating it to the 3 main OSes and how to make it.
 
@@ -144,11 +137,11 @@ After the download, open `macOS downloads/.../...` until you find RecoveryHDUpda
    9. Let it restore
 8. When done you can continue this guide...
 
-### Copy EFI Folder to USB
+### Copy EFI Folder to USB installer
 
-Copy the content of the `EFI` folder provided in my repo onto your USB flash drive `EFI` partition. The EFI partition is usually hidden. Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount the EFI partition of your flash drive on your mac (it appears as a disk on the desktop once done). On Windows or Linux it shouldn't be hidden.
+Copy the `EFI` folder provided in my repo onto your USB flash drive `CLOVER` partition. The partition is usually hidden. Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount the EFI partition of your flash drive on your mac (it appears as a disk on the desktop once done). On Windows or Linux it shouldn't be hidden.
 
-## Install macOS
+## Installing macOS
 
 Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
 
