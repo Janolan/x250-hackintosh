@@ -8,6 +8,14 @@ It's a `99.99%` working hackintosh. What doesn't work (yet):
 - Trackpad Buttons
 - Wifi/Bluetooth (use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a Dell DW1560/Broadcom BCM94352Z)
 - Card Reader
+- VGA (use miniDP instead)
+
+## Overview
+
+- I included parts and combined a few other guides to make this. Credit for those guides is given to their respective owners.
+- It is assumed that you have a decent understanding of Hackintosh, the macOS environment, as well as how to do basic computer tasks
+- Special thanks to hackintosh-forum.de and their thread on the X250 [Here](https://www.hackintosh-forum.de/forum/thread/39260-mojave-auf-lenovo-x250-anpassung-nach-der-installation/). The `EFI` folder and the kexts were posted there by 3zra and are his and credit goes to him. Also a special thanks to [midi1996](https://github.com/midi1996) on GitHub for his guide on how to create the macOS installer from Recovery. Parts of his guide were included here to streamline the process.
+- **Note:** I am NOT responsible for any harm you cause to your device. This guide is provided "as-is" and all steps taken are done at your own risk
 
 ## Physical and non-physical Requirements
 
