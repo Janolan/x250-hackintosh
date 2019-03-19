@@ -57,10 +57,10 @@ Install macOS by booting on the USB key. It takes about 30min. The computer will
 
 To finish the setup, you need to make your local drive bootable (right now you are still using the Clover boot from your USB installer to boot your system:
 
-- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer).
+- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer). Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount it.
 - **Install Kexts**: install kernel extensions provided by `Kexts` from this repository into `/Library/Extensions`. Use this guide to [properly install the kexts.](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave.268964/)]
 
-You're almost done! Reboot and enjoy macOS on your Thinpad X250.
+You're almost done! Reboot and enjoy macOS on your Thinkpad X250.
 
 ## Miscellaneous
 
