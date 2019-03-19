@@ -116,7 +116,6 @@ In terminal:
       3. for the rest of you, you should know ¯\\_\(ツ\)\_/¯
    2. run this `7z e -txar *.pkg *.dmg; 7z e *.dmg */Base*; 7z e -tdmg Base*.dmg *.hfs` this will extract the recovery from the pkg through extracting the recovery update package then extracting the recovery dmg then the hfs image from it.
    3. then when you get `4.hfs` or `3.hfs` \(depending on the macOS version used\) run `dd if=*.hfs of=/dev/<your USB's second partition block> bs=8M --progress` \(you may change the input file `if` and the block size to match your needs
-6. after that, you're ready to go for the next step of the guide...
 
 #### macOS
 
@@ -143,7 +142,6 @@ After the download, open `macOS downloads/.../...` until you find RecoveryHDUpda
    7. Select Restore
    8. Choose BaseSystem from the list \(it should be the image you mounted earlier\)
    9. Let it restore
-8. When done you can continue this guide...
 
 ### Copy EFI Folder to USB installer
 
