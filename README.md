@@ -16,7 +16,21 @@ It's a `99.99%` working hackintosh. What doesn't work (yet):
 - Wifi (use a USB Wifi Dongle or replace the Wifi Card with a DW1560)
 - Card Reader
 
-## Setup
+## Physical and non-physical Requirements
+
+### Physical Requirements
+
+* A minimum of 4GB USB drive
+
+### Non-physical Requirements
+
+* Python 2.7 or greater:
+  * For Windows, get it from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and make sure you enable "add to PATH" in the install
+  * For linux users, install it if you dont have it following your distro's tools
+  * For macOS users, you already have 2.7+ version installed, no need for extra tools
+* gibMacOS: a sweet tool from /u/corpnewt [https://github.com/corpnewt/gibMacOS](https://github.com/corpnewt/gibMacOS)
+  * press `Clone or Download` button and download as Zip, extract it somewhere
+* Other software requirements will be downloaded thorough the guide \(OS specific\)
 
 ### Bios Settings
 
@@ -38,16 +52,7 @@ In `Startup` menu, set the following options:
 - `UEFI/Legacy Priority`: **UEFI First**,
 - `CSM Support`: **Yes**.
 
-### Requirements
-
-* A minimum of 4GB USB drive
-* Python 2.7 or greater:
-  * For Windows, get it from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and make sure you enable "add to PATH" in the install
-  * For linux users, install it if you dont have it following your distro's tools
-  * For macOS users, you already have 2.7+ version installed, no need for extra tools
-* gibMacOS: a sweet tool from /u/corpnewt [https://github.com/corpnewt/gibMacOS](https://github.com/corpnewt/gibMacOS)
-  * press `Clone or Download` button and download as Zip, extract it somewhere
-* Other software requirements will be downloaded thorough the guide \(OS specific\)
+## Create USB installer
 
 ### Downloading the Recovery HD image...
 
@@ -142,25 +147,15 @@ After the download, open `macOS downloads/.../...` until you find RecoveryHDUpda
 
 Copy the content of the `EFI` folder provided in my repo onto your USB flash drive `EFI` partition. The EFI partition is usually hidden. Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount the EFI partition of your flash drive on your mac (it appears as a disk on the desktop once done). On Windows or Linux it shouldn't be hidden.
 
-### Install macOS
+## Install macOS
 
 Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
 
-### What's next?
+### Making local drive bootable
 
 To finish the setup, you need to make your local drive bootable (right now you are still using the Clover boot from your USB installer to boot your system:
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer). Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount it.
 - **Install Kexts**: install kernel extensions provided by `Kexts` from this repository into `/Library/Extensions`. Use this guide to [properly install the kexts.](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave.268964/)]
 
-You're almost done! Reboot and enjoy macOS on your Thinkpad X250.
-
-## Miscellaneous
-
-### SSD Enable Trim
-
-If you Sata ssd hasn't trim enabled, run the following command from the *Terminal* to enable it:
-
-```
-sudo trimforce enable
-```
+Reboot and enjoy macOS on your Thinkpad X250.
