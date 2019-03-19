@@ -149,7 +149,9 @@ Copy the `EFI` folder provided in my repo onto your USB flash drive `CLOVER` par
 
 ## Installing macOS
 
-Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
+Install macOS by booting from the USB installer. Format your local drive with the Disk Utility application as `Apple Extended Journal` and `GUID-partition table`. 
+
+It takes about 30 min from start to finish. The computer will restart multiple times. When rebooting, make sure to select `Install macOS ...` each time in the Clover boot menu. Once installed, choose to boot from local drive in the Clover boot menu.
 
 ### Making local drive bootable
 
