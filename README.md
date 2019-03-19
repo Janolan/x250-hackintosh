@@ -37,7 +37,7 @@ What doesn't work (yet):
   * For macOS users, you already have 2.7+ version installed, no need for extra tools
 * gibMacOS: a sweet tool from /u/corpnewt [https://github.com/corpnewt/gibMacOS](https://github.com/corpnewt/gibMacOS)
   * press `Clone or Download` button and download as Zip, extract it somewhere
-* Other software requirements will be downloaded throughout the guide \(OS specific\)
+* Clover Configurator: a tool to edit the `config.plist` file and to mount the `EFI` partition. https://mackie100projects.altervista.org/download-clover-configurator/
 
 ### BIOS Settings
 
@@ -162,7 +162,7 @@ It takes about 30 min from start to finish. The computer will restart multiple t
 
 To finish the setup, you need to make your local drive bootable (right now you are still using the Clover boot from your USB installer to boot your system:
 
-- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer). Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount it.
+- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB installer) which can be mount with Clover Configurator.
 - **Install Kexts**: Create a folder named `Kext` on your desktop and copy kernel extensions found in `/EFI/CLOVER/kexts/Other` into it. Open Terminal and type `cd desktop/Kext`. Then type `sudo cp -R *.kext /Library/Extensions` to move the files and rebuild the cache with `sudo kextcache -i /`.
 - **Delete Kexts from Clover**: Now go back to `/EFI/CLOVER/kexts/Other` and delete everything, except `FakeSMC.kext`, `IntelMausiEthernet.kext` and `VoodooPS2Controller.kext`.
 
