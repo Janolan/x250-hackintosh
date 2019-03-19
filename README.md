@@ -29,7 +29,7 @@ What doesn't work (yet):
 * A USB drive (minimum is 4GB)
 * A working Ethernet connection
 
-### Non-physical Requirements
+### Non-Physical Requirements
 
 * Python 2.7 or greater:
   * For Windows, get it from [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and make sure you enable "add to PATH" in the install
