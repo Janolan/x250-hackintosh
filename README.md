@@ -1,10 +1,25 @@
-# Project Title
+# X250 Hackintosh (macOS 10.14.x)
 
-One Paragraph of project description goes here
+This is a guide to set up the Lenovo Thinkpad X250 as a 99% working hackintosh.
 
-## Getting Started
+## Introduction
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Thinkpad X250 Hackintosh configuration. This repository contains the following folders:
+
+- `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
+- `Kexts`: kexts to install in `/Library/Extensions` on your local drive once macOS has been installed.
+
+It's a `99.99%` working hackintosh, including:
+
+- *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
+- **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
+- **Battery status**: handled by [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver) kext,
+- Brightness control: Thanks to [AppleBacklightFixup](https://bitbucket.org/RehabMan/applebacklightfixup) kext,
+- Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
+- USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
+- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
+- Audio Jack connector,
+- And Display Port external display.
 
 ### Prerequisites
 
