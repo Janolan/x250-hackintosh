@@ -2,7 +2,7 @@
 
 This is a guide on how to install macOS mojave on the Thinkpad X250.
 
-It's a `99.99%` working hackintosh. What doesn't work (yet):
+What doesn't work (yet):
 
 - Trackpoint
 - Trackpad Buttons
