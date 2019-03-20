@@ -13,7 +13,7 @@ Bugs:
 - `Battery indicator` (it goes down to 7% when one of the batteries is empty and then just stays there and doesn't show the status of the second battery)
 
 What will (most likely) never work:
-- Native `Wifi/Bluetooth` (just use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a macOS compatible one, like the Dell DW1560 or the Broadcom BCM94352Z)
+- Out-of-the-box `Wifi/Bluetooth` (just use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or replace the Wifi Card with a macOS compatible one, like the Dell DW1560 or the Broadcom BCM94352Z)
 - `PCI Card Reader`
 - `VGA` (use miniDP instead)
 
