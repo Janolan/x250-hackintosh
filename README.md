@@ -21,7 +21,7 @@ What will (most likely) never work:
 
 - I included parts and combined a few other guides to make this. Credit for those guides is given to their respective owners.
 - It is assumed that you have a decent understanding of Hackintosh, the macOS environment, as well as how to do basic computer tasks
-- Special thanks to hackintosh-forum.de and their thread on the X250 [Here](https://www.hackintosh-forum.de/forum/thread/39260-mojave-auf-lenovo-x250-anpassung-nach-der-installation/). The `EFI` folder and the kexts were posted there by 3zra and are his and credit goes to him. Also a special thanks to [midi1996](https://github.com/midi1996) on GitHub for his guide on how to create the macOS installer from Recovery. Parts of his guide were included here to streamline the process.
+- Special thanks to `hackintosh-forum.de` and their thread on the X250 [here](https://www.hackintosh-forum.de/forum/thread/39260-mojave-auf-lenovo-x250-anpassung-nach-der-installation/). The `EFI` folder and the kexts were posted there by 3zra and are his and credit goes to him. Also a special thanks to [midi1996](https://github.com/midi1996) on GitHub for his guide on how to create the macOS installer from Recovery. Parts of his guide were included here to streamline the process.
 - **Note:** I am NOT responsible for any harm you cause to your device. This guide is provided "as-is" and all steps taken are done at your own risk
 
 ## Physical and non-physical Requirements
