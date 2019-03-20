@@ -15,6 +15,9 @@ What doesn't work (yet):
 - `VGA` (use miniDP instead)
 - `Battery indicator` (it goes down to 7% when one of the batteries is empty and then just stays there and doesn't show the status of the second battery)
 
+What will never work:
+- `Wifi/Bluetooth` WITHOUT replacing the existing Wifi Card (I use a dirt cheap USB Wifi Dongle, like the TP-Link WN725N, or instead replace the Wifi Card with a Dell DW1560/Broadcom BCM94352Z)
+
 ## Overview
 
 - I included parts and combined a few other guides to make this. Credit for those guides is given to their respective owners.
