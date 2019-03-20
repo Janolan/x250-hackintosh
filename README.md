@@ -9,7 +9,7 @@ This is a guide on how to install macOS mojave on the Thinkpad X250.
 What doesn't work (yet):
 
 - `Trackpoint`
-- `Trackpad Buttons`
+- `Trackpad Buttons` (they're registered as a short right-click)
 - `Battery indicator` (it goes down to 7% when one of the batteries is empty and then just stays there and doesn't show the status of the second battery)
 
 What will (most likely) never work:
